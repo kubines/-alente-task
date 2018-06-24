@@ -1,0 +1,31 @@
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  header .head-1 {
+    max-width: 943px;
+    width: 100%;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .head-1__soc {
+      width: 129px; }
+      header .head-1__soc a {
+        width: 34px;
+        height: 33px;
+        border: 1px solid #c2c2c2; }
+  header .head-2 {
+    width: 100%;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f; }
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden; }
+

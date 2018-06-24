@@ -1,0 +1,42 @@
+$nova: "Proxima Nova Condensed";
+$nova2: "Proxima Nova";
+$myriad: "Myriad Pro";
+$georg: "Giorgia";
+$white: rgb(255, 255, 255);
+$black: rgb(31, 31, 31);
+$hov_col:  rgb(185, 131, 72);
+$content: 1001px;
+
+@mixin respond-to($media) {
+    @media only screen and (max-width: $media)
+      {
+          @content
+        }
+    
+};
+
+@import '/scss/header.scss';
+@import '/scss/main.scss';
+@import '/scss/catalog.scss';
+@import '/scss/timing.scss';
+@import '/scss/brend.scss';
+@import './scss/footer.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    outline: none; 
+    background: transparent;
+    &:hover {
+        cursor: pointer;
+    }
+}
+

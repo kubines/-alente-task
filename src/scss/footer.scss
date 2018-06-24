@@ -1,0 +1,135 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeeee;
+    & .footer_wrap {
+        width: 100%;
+        min-height: 248px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(246, 246, 246);
+        border-top: 1px solid rgb(130, 129, 129);
+        border-bottom: 1px solid rgb(130, 129, 129);
+        & .footer {
+            width: $content;
+            min-height: 248px;
+            display: flex;
+            @include respond-to(900px) {
+                min-height: 300px;
+            }
+            @include respond-to(500px) {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            &__link-1 {
+                width: 205px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 47px;
+                @include respond-to(1000px) {
+                    align-items: center;
+                }
+                & a {
+                    display: block;
+                    color: rgb(185, 131, 72);
+                    font-family: $nova2;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    @include respond-to(500px) {
+                        line-height: 18px;
+                    }
+                }
+            }
+
+            &__link-2 {
+                max-width: 448px;
+                width: 100%;
+                display: flex;
+                align-items: baseline;
+                justify-content: space-around;
+                border-left: 1px solid rgb(130, 129, 129);
+                border-right: 1px solid rgb(130, 129, 129);
+                @include respond-to(900px) {
+                    padding-top: 20px;
+                    width: 300px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                @include respond-to(500px) {
+                    border: 0;
+                }
+                & > div {
+                    margin-top: 47px;
+                    display: flex;
+                    flex-direction: column;
+                    @include respond-to(900px) {
+                        margin-top: 0;
+                    }
+                    & a {
+                        color: #4c4c4c;
+                        margin-bottom: 15px;
+                        font-family: $nova;
+                        font-size: 15px;
+                        font-weight: 500;
+                        text-decoration: underline;
+                        text-transform: uppercase;
+                        @include respond-to(500px) {
+                            margin-bottom: 4px;
+                        }
+                    }                    
+                }
+            }
+
+            &__contact {
+                margin: 0 auto;
+                width: 200px;
+                color: rgb(17, 17, 17);
+                font-family: $nova2;
+                @include respond-to(500px) {
+                    width: 100%;
+                    text-align: center;
+                }
+                & p:nth-child(1) {
+                    margin-top: 49px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                }
+                & p:nth-child(2) {
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: 300;
+                    & span {
+                        font-weight: 700;
+                    }
+                    & a {
+                        color: rgb(185, 131, 72);
+                        font-weight: 600;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    & .copyright {
+        width: $content;
+        height: 46px;
+        color: rgb(130, 129, 129);
+        font-family: $nova2;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 43px;
+        @include respond-to(1000px) {
+            width: 100%;
+        }
+    }
+}

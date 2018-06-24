@@ -1,0 +1,174 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $nova;
+    & .head-1 {
+        max-width: 943px;
+        width: 100%;
+        min-height: 53px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $black;
+        @include respond-to(750px) {
+            justify-content: space-around;
+            align-items: center;
+            min-height: 70px;
+        }
+        &__soc {
+            display: flex;
+            border: 1px solid rgb(194, 194, 194);
+            border-right: 0;
+            & a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 34px;
+                height: 33px;
+                color: #c2c2c2;
+                font-family: Tahoma;
+                font-size: 17px;
+                font-weight: 700;
+                border-right: 1px solid rgb(194, 194, 194);
+                transition: 0.1s ease-in-out;
+                &:hover {
+                    background-color: $hov_col;
+                }
+            }
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+            & > img:nth-child(1) {
+                display: block;
+                margin-right: 7px;
+            }
+            & > img:nth-child(3) {
+                display: block;
+                width: 10px;
+                height: 6px;
+            }
+            &-select {
+                appearance: none;
+                border: none;
+                color: #1f1f1f;
+                font-family: $nova;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 18px;
+                letter-spacing: 2px;
+                text-decoration: underline solid rgb(194, 194, 194);
+                outline: none;
+                text-align-last: center;
+                text-align: center;
+            }
+        }
+        &__tel {
+            display: flex;
+            font-size: 17px;
+            font-weight: 600;
+            text-align: right;
+            text-transform: uppercase;
+            &:before {
+                content: "";
+                display: block;
+                width: 13px;
+                height: 15px;
+                margin-right: 5px;
+                margin-top: 2px;
+                background-image: url('img/tel.png');
+            }
+        }
+        &__login {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            & img {
+                display: block;
+                height: 15px;
+                margin-right: 7px;
+            }
+            & p {
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 18px;
+                letter-spacing: 2px;
+                border-bottom: 1px;
+                border-bottom-style: dashed;
+            }
+        }
+        &__basket {
+            display: flex;
+            align-items: center;
+            & img {
+                margin-right: 7px;
+            }
+            & p {
+                color: $black;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 18px;
+                letter-spacing: 2px;
+                border-bottom: 1px;
+                border-bottom-style: dashed;
+            }
+            & span {
+                margin-left: 2px;
+                color: #b98348;
+                font-family: PTSerif;
+                font-size: 14px;
+                font-style: italic;
+                line-height: 18px;
+            }
+        }
+    }
+
+    & .head-2 {
+        width: 100%;
+        height: 57px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(31, 31, 31);
+        @include respond-to(750px) {
+            justify-content: space-between;
+        }
+        &__logo {
+            width: 157px;
+            margin-right: 93px;
+            @include respond-to(1000px) {
+            margin-right: 40px;
+            margin-left: 10px;
+        }
+        }
+        
+        &__menu {
+            max-width: 701px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            @include respond-to(1000px) {
+                justify-content: space-between;
+            }
+            @include respond-to(700px) {
+                display: none;
+            }
+            & a {
+                color: $white;
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                border-top: 1px solid transparent; 
+                &:hover {
+                    border-bottom: 1px solid $white;
+                    border-bottom-style: dashed;
+                    border-top: 1px solid transparent;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.brend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 153px;
+    background-image: url('img/brendbg.png');
+    background-size: cover;
+    @include respond-to(800px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 40px 0 40px 0;
+    }
+    @include respond-to(500px) {
+        flex-direction: column;
+    }
+    & img {
+        display: block;
+        margin: 0 35px 0 35px;
+        @include respond-to(500px) {
+            margin: 15px;
+        }
+    }
+}
