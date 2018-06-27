@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     &-menu {
         max-width: $content;
         width: 100%;
@@ -33,6 +34,7 @@
             }
         }
     }
+    
     &-list {
         max-width: $content;
         height: auto;
@@ -44,6 +46,7 @@
         @include respond-to(1010px) {
             justify-content: space-around;
         }
+        
         & > div {
             position: relative;
             width: 33%;

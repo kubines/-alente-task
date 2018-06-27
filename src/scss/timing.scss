@@ -11,6 +11,7 @@
     color: $white;
     letter-spacing: 2px;
     text-align: center;
+
     & h2 {
         margin-top: 80px;
         font-family: $georg;
@@ -21,6 +22,7 @@
             margin-top: 30px;
         }
     }
+
     & p:nth-child(2) {
         margin-top: 10px;
         font-family: $nova2;
@@ -28,6 +30,7 @@
         font-weight: 600;
         text-transform: uppercase;
     }
+
     & p:nth-child(3) {
         margin-top: 10px;
         font-family: $nova2;
@@ -35,6 +38,7 @@
         font-weight: 700;
         text-transform: uppercase;
     }
+    
     & p:nth-child(4) {
         max-width: 277px;
         height: 98px;

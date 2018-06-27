@@ -13,6 +13,7 @@ footer {
         background-color: rgb(246, 246, 246);
         border-top: 1px solid rgb(130, 129, 129);
         border-bottom: 1px solid rgb(130, 129, 129);
+        
         & .footer {
             width: $content;
             min-height: 248px;
@@ -24,6 +25,7 @@ footer {
                 justify-content: center;
                 flex-wrap: wrap;
             }
+            
             &__link-1 {
                 width: 205px;
                 display: flex;
