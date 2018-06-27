@@ -1,14 +1,13 @@
 .brend {
+    width: 100%;
+    min-height: 153px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 153px;
+    flex-wrap: wrap;
     background-image: url('img/brendbg.png');
     background-size: cover;
-    @include respond-to(800px) {
-        flex-wrap: wrap;
-        justify-content: space-around;
+    @include respond-to(500px) {        
         padding: 40px 0 40px 0;
     }
     @include respond-to(500px) {
@@ -16,7 +15,13 @@
     }
     & img {
         display: block;
-        margin: 0 35px 0 35px;
+        margin: 48px 35px 0 35px;
+        @include respond-to(1100px) {
+            margin: 48px 20px 10px 20px;
+        }
+        @include respond-to(945px) {
+            margin: 20px 20px 10px 20px;
+        }
         @include respond-to(500px) {
             margin: 15px;
         }
