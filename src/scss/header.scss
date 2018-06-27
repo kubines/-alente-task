@@ -21,7 +21,7 @@ header {
             min-height: 70px;
         }
         @include respond-to(320px) {
-            background-color: rgb(141, 37, 37);
+            height: 80px;
         }
 
         &__soc {

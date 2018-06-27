@@ -1,4 +1,4 @@
-$nova: "Proxima Nova Condensed";
+$nova: "Proxima Nova Condensed", "Proxima Nova";
 $nova2: "Proxima Nova";
 $myriad: "Myriad Pro";
 $georg: "Giorgia";
@@ -20,6 +20,7 @@ $content: 1001px;
 @import '/scss/catalog.scss';
 @import '/scss/timing.scss';
 @import '/scss/brend.scss';
+@import './scss/register.scss';
 @import './scss/footer.scss';
 
 

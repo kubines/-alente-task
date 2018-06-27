@@ -1,0 +1,189 @@
+.register {
+    display: flex;
+    min-height: 610px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img/registerbg.png');
+    background-color: rgb(238, 238, 238);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    & h1 {
+        margin-top: 61px;
+        color: rgb(31, 31, 31);;
+        font-family: $nova2;
+        font-size: 26px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    & > p {
+        max-width: 621px;
+        margin-top: 28px;
+        color: rgb(31, 31, 31);
+        font-family: $nova2;
+        font-size: 20px;
+        font-weight: 400;
+        &:after {
+            content: " ";
+            display: block;
+            width: 166px;
+            height: 2px;
+            margin-top: 31px;
+            margin-left: calc(50% - 83px);
+            background: rgb(31, 31, 31);;
+        }
+    }
+
+    &-form {
+        width: 1005px;
+        min-height: 336px;
+        display: flex;
+        margin-top: 34px;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border: 2px solid black;
+        @include respond-to(1005px) {
+            width: 96%;
+        }
+
+        & > div {
+            width: 622px;
+            display: flex;
+            @include respond-to(680px) {
+                width: 100%;
+                margin-left: 20px;
+            }
+        }
+
+        &__select {
+            width: 100%;
+            margin-top: 22px;
+            display: flex;
+            @include respond-to(680px) {
+                justify-content: space-between;
+                flex-direction: column;
+            }
+
+            & div:nth-child(2) {
+                margin-left: 52px;
+                @include respond-to(680px) {
+                    margin: 0;
+                }
+            }
+
+            & div:nth-child(3) {
+                margin-left: 40px;
+                @include respond-to(680px) {
+                    margin: 0;
+                }
+            }
+
+            & p {
+                display: block;
+                margin-bottom: 10px;
+                color: #1f1f1f;
+                font-family: $georg;
+                font-size: 13px;
+                font-style: italic;
+                @include respond-to(680px) {
+                    margin-top: 20px;
+                }
+            }
+
+            & select {
+                color: #b98348;
+                appearance: none;
+                font-family: $nova2;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 38px;
+                border: 2px solid rgb(31, 31, 31);
+                background-repeat: no-repeat;
+                background-position: 10px center;
+            }
+
+            &-item1 {
+                width: 144px;
+                height: 40px;
+                background-image: url('img/select-date.png');
+                padding-left: 32px;
+            }
+            &-item2 {
+                width: 109px;
+                height: 40px;
+                background-image: url('img/select-time.png');
+                padding-left: 32px;
+            }
+            &-item3 {
+                width: 276px;
+                height: 40px;
+                background-image: url('img/select-geo.png');
+                padding-left: 32px;
+            }
+        }
+
+        &__input {
+            justify-content: space-between;
+            margin-top: 29px;
+            @include respond-to(680px) {
+                flex-direction: column;
+                margin-top: 0;
+            }
+            & input {
+                height: 40px;
+                border: 2px solid #1f1f1f;
+                color: #b98348;
+                font-family: $nova2;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 18px;
+                @include respond-to(680px) {
+                    margin-top: 20px;
+                }
+            }
+
+            & input:nth-child(1) {
+                width: 270px;
+                background-image: url('img/input-user.png');
+                background-repeat: no-repeat;
+                background-position: 10px center;
+                padding-left: 32px;
+                @include respond-to(500px) {
+                    width: 80%;
+                }
+            }
+
+            & input:nth-child(2) {
+                width: 240px;
+                background-image: url('img/input-tel.png');
+                background-repeat: no-repeat;
+                background-position: 10px center;
+                padding-left: 32px;
+                @include respond-to(500px) {
+                    width: 80%;
+                }
+            }
+        }
+
+        & button {
+            width: 622px;
+            height: 49px;
+            margin-top: 34px;
+            background-color: #b98348;
+            color: white;
+            font-family: $nova2;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 38px;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+            @include respond-to(680px) {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -40,7 +40,9 @@ module.exports = {
                         browsers: ['last 2 versions']
                       },
                       plugins: () => [
-                        autoprefixer
+                        autoprefixer({
+                            browsers:['ie >= 8', 'last 4 version']
+                        })
                       ]
                     }
                   },
