@@ -33,6 +33,13 @@
         @include respond-to(890px) {
             margin: 0;
             font-size: 45px;
+            width: 80%;
+        }
+        @include respond-to(420px) {
+            font-size: 30px;
+            line-height: 50px;
+            width: 90%;
+
         }
         &:after, &:before {
             position: relative;
